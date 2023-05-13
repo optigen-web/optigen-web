@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta content="ie=edge" http-equiv="x-ua-compatible">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+
+  <title>Optimized Generators</title>
+  <meta name="description" content="Optimized Generators, S.L."> <!--PENDING-->
+
+  <link rel="icon" type="image/png" href="files/favicon.png"> <!--PENDING-->
+  <link href="files/main.css" rel="stylesheet">
+  <link href="https://fonts.gstatic.com/" rel="preconnect">
+  <link href="files/fontlist.css" rel="stylesheet">
+  <link rel="stylesheet" id="appointment-font-awesome-min-css" href="files/font-awesome-4.7.0/css/font-awesome.min.css" type="text/css" media="all">
+
+  <script>localStorage.getItem('darkMode') === 'true' && document.documentElement.setAttribute('data-mode', 'dark');</script>
+</head>
+
+<body class="page page-home has-fixed-header">
+
+<div class="menu-main-mobile " id="menu-main-mobile">
+  
+  <div class="menu-main-mobile-top">
+    <div id="close-overlay" class="menu-main-close">
+      <div class="hamburger"></div>
+    </div>
+  </div>
+
+  <div class="menu-main-mobile-center">
+    <ul class="menu">
+      <li class="menu-item menu-item-home active">
+        <a href="#">Home</a>
+      </li>
+      <li class="menu-item menu-item-services active">
+        <a href="#concept">Concept</a>
+      </li>
+      <li class="menu-item menu-item-blog active">
+        <a href="#team">Team</a>
+      </li>
+      <li class="menu-item menu-item-about active">
+        <a href="#contact">Contact</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="menu-main-mobile-bottom">
+    <div class="dark-mode-switcher " id="dark-mode-container">
+      <div class="dark-mode-switch">
+      <svg class="dark-mode-icon-dark" data-name="Layer 1" fill="#000000" height="20px" viewBox="0 0 64 64" width="20px" x="0px" xmlns="http://www.w3.org/2000/svg" y="0px">
+        <title>OptiGen</title>
+        <path d="M33.28,58.24A26.95,26.95,0,0,1,24,6l.39-.13a2,2,0,0,1,2.4,2.87,22.42,22.42,0,0,0-1.51,18.75h0A22.47,22.47,0,0,0,54.09,40.8l.76-.3a2,2,0,0,1,2.24.48,2,2,0,0,1,.35,2.24,27,27,0,0,1-24.16,15ZM21.11,11.85a22.94,22.94,0,1,0,30,33.91A26.46,26.46,0,0,1,21.53,28.87h0A26.4,26.4,0,0,1,21.11,11.85Z"></path>
+      </svg>
+      <svg class="dark-mode-icon-light" fill="#000000" height="20px" style="enable-background: new 0 0 100 100;" version="1.1" viewBox="0 0 100 100" width="20px" x="0px" xml:space="preserve" xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" y="0px">
+        <g>
+        <path d="M50,75c-13.8,0-25-11.2-25-25s11.2-25,25-25s25,11.2,25,25S63.8,75,50,75z M50,33.3c-9.2,0-16.7,7.5-16.7,16.7   c0,9.2,7.5,16.7,16.7,16.7c9.2,0,16.7-7.5,16.7-16.7C66.7,40.8,59.2,33.3,50,33.3z"></path>
+        </g>
+        <g>
+        <path d="M50,100c-2.3,0-4.2-1.9-4.2-4.2v-8.3c0-2.3,1.9-4.2,4.2-4.2c2.3,0,4.2,1.9,4.2,4.2v8.3C54.2,98.1,52.3,100,50,100z    M17.5,86.7c-1.1,0-2.1-0.4-2.9-1.2c-1.6-1.6-1.6-4.3,0-5.9l5.8-5.8c1.6-1.6,4.3-1.6,5.9,0c1.6,1.6,1.6,4.3,0,5.9l-5.8,5.8   C19.6,86.3,18.6,86.7,17.5,86.7z M82.5,86.7c-1.1,0-2.1-0.4-2.9-1.2l-5.8-5.8c-1.6-1.6-1.6-4.3,0-5.9s4.3-1.6,5.9,0l5.8,5.8   c1.6,1.6,1.6,4.3,0,5.9C84.6,86.3,83.6,86.7,82.5,86.7z M95.8,54.2h-8.3c-2.3,0-4.2-1.9-4.2-4.2c0-2.3,1.9-4.2,4.2-4.2h8.3   c2.3,0,4.2,1.9,4.2,4.2C100,52.3,98.1,54.2,95.8,54.2z M12.5,54.2H4.2C1.9,54.2,0,52.3,0,50c0-2.3,1.9-4.2,4.2-4.2h8.3   c2.3,0,4.2,1.9,4.2,4.2C16.7,52.3,14.8,54.2,12.5,54.2z M76.7,27.5c-1.1,0-2.1-0.4-2.9-1.2c-1.6-1.6-1.6-4.3,0-5.9l5.8-5.8   c1.6-1.6,4.3-1.6,5.9,0c1.6,1.6,1.6,4.3,0,5.9l-5.8,5.8C78.8,27.1,77.7,27.5,76.7,27.5z M23.3,27.5c-1.1,0-2.1-0.4-2.9-1.2   l-5.8-5.8c-1.6-1.6-1.6-4.3,0-5.9c1.6-1.6,4.3-1.6,5.9,0l5.8,5.8c1.6,1.6,1.6,4.3,0,5.9C25.5,27.1,24.4,27.5,23.3,27.5z M50,16.7   c-2.3,0-4.2-1.9-4.2-4.2V4.2C45.8,1.9,47.7,0,50,0c2.3,0,4.2,1.9,4.2,4.2v8.3C54.2,14.8,52.3,16.7,50,16.7z"></path>
+        </g>
+      </svg>
+      <div class="ball"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="header" class="header header-fixed header-transparent">
+  <div class="container">
+    <div class="logos">
+      <div class="logo logo-desktop">
+          <div class="logo-image">
+            <a href="#">
+              <img alt="Logo" src="files/logo.png" width="132px" height="30px"> <!--PENDING-->
+            </a>
+          </div>
+      </div>
+      <div class="logo logo-desktop-invert"> 
+          <div class="logo-image">
+            <a href="#">
+              <img alt="Logo" src="files/logo-invert.png" width="132px" height="30px"> <!--PENDING-->
+            </a>
+          </div>
+      </div>
+      <div class="logo logo-mobile">
+          <div class="logo-image">
+            <a href="#">
+              <img alt="Logo" src="files/logo-mobile.png" width="34px" height="30px"> <!--PENDING-->
+            </a>
+          </div>
+      </div>
+      <div class="logo logo-mobile-invert">
+          <div class="logo-image">
+            <a href="#">
+              <img alt="Logo" src="files/logo-invert-mobile.png" width="34px" height="30px"> <!--PENDING-->
+            </a>
+          </div>
+      </div>
+    </div>
+    <div class="menu-main">
+      <ul>
+        <li class="active"><a href="#">Home</a></li>
+        <li class="active"><a href="#concept">Concept</a></li>
+        <li class="active"><a href="#team">Team</a></li>
+        <li class="active"><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="hamburger-trigger" id="toggle-menu-main-mobile">
+      <button class="hamburger">Menu</button>
+    </div>
+  </div>
+</div>
+
+<div id="wrapper" class="wrapper">     
+  <div class="hero 
+    
+    hero-fullscreen-mobile
+   
+    hero-gradient
+  " style="
+    background-color: #1d2830;
+   
+    height: 900px; <!--PENDING DETECT SCREEN HEIGHT-->
+  ">
+    <div class="hero-background-image" style="
+    background-image: url('/assets/images/gen/home/home-1-large.webp');
+    mix-blend-mode: overlay;
+    "></div>
+    
+    <div class="container ">
+      <div class="row align-items-center">
+        <div class="col-12 col-lg-12 ">
+          <div class="hero-text" style="color: #FFFFFF;"> <!--PENDING BACKGROUND IMAGE-->
+            <h1>OptiGen</h1>
+            <p style="font-style: italic;">Lightweight, modular drive-train design optimized for floating offshore wind turbines.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section" id="concept">
+  <div class="container">
+    <div class="info">
+      <div class="row">
+        
+        <div class="col-12">
+          <div class="grid-header grid-header-align-center">
+            <div class="info-content">
+              <h2>OptiGen Concept</h2>
+            </div>
+          </div>
+          <div class="grid-header grid-header-align-center">
+            <div class="info-content">
+              <p style="text-align: justify; width: 100%;">OptiGen presents a novel design that intends to revolutionise the industy by lowering the weight and cost of offshore wind turbine generators (WTGs). Our solution allows for further scalability of designs to power ratings of <strong>up to 25 MW</strong> in its current design. PENDIENTE REDACCIÓN</p>
+            </div>
+          </div>  
+        </div>
+        
+        <div class="col-12 col-md-6 mt-3 order-1">
+            <img alt="Picture 1." class="img-fluid shadow rounded" src="Jekyll%20Advance%20-%20Premium%20Jekyll%20Theme_fitxers/content-5-thumbnail.webp" width="640" height="360">
+        </div>
+        <div class="col-12 col-md-6 mt-3 order-1">
+          <div class="info-content">
+            <h2>Airgap stability</h2>
+            <p class="mt-1 large ">By bringing the support of rotation away from the rotor's center and onto its periphery, OptiGen allows for a much increased airgap stability, even with relaxed manufacturing tolerance requirements. In turn, this allows for a reduction in the airgap length, leading to a substantial reduction of active materials when compared with other equivalent technological solutions.</p>
+            <p class="mt-1 large ">As a rule of thumb, the airgap is typically set at about 1/1000th of the generator diameter. For example, for the NREL 15 MW, which has a generator with 10 m of diameter, the airgap is roughly 10 mm.</p>
+            <p class="mt-1 large ">OptiGen's preliminary designs show the capability of an airgap BELOW 4 mm FOR A 18 MW POWER RATING GENERATOR ¡¡¡INVENTADA!!!</p>
+          </div>
+        </div>
+        
+        <div class="col-12 col-md-6 mt-3 order-2">
+          <div class="info-content">
+            <h2>Modularity</h2>
+            <p class="mt-1 large ">Probably the most important feature of OptiGen: the generator stator is constituted by an ensemble of bogies that support the rotor's rails on an ensemble of wheels. </p>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 mt-3 order-2">
+            2<img alt="Picture 2." class="img-fluid shadow rounded" src="Jekyll%20Advance%20-%20Premium%20Jekyll%20Theme_fitxers/content-5-thumbnail.webp" width="640" height="360">
+        </div>
+        
+        <div class="col-12 col-md-6 mt-3 order-3">
+            4<img alt="Picture 3." class="img-fluid shadow rounded" src="Jekyll%20Advance%20-%20Premium%20Jekyll%20Theme_fitxers/content-5-thumbnail.webp" width="640" height="360">
+        </div>
+        <div class="col-12 col-md-6 mt-3 order-3">
+          <div class="info-content">
+            <h2>3We've helped hundreds of people grow their business online.</h2>
+            <p class="mt-1 large ">Our software empowers customers and retailers to work from anywhere in the world, on the go, or at home.</p>
+          </div>
+        </div>
+        
+        <div class="col-12 col-md-6 mt-3 order-4">
+          <div class="info-content">
+            <h2>3We've helped hundreds of people grow their business online.</h2>
+            <p class="mt-1 large ">Our software empowers customers and retailers to work from anywhere in the world, on the go, or at home.</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 mt-3 order-4">
+            4<img alt="Picture 4." class="img-fluid shadow rounded" src="Jekyll%20Advance%20-%20Premium%20Jekyll%20Theme_fitxers/content-5-thumbnail.webp" width="640" height="360">
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="section bg-base-bg-2 pt-3">
+  <div class="container">
+    <div class="info">
+      <div class="row">
+        <div class="col-12">
+          <div class="grid-header grid-header-align-center">
+            <div class="info-content">
+              <!-- <h2>Some other key features</h2> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row ">
+
+      <div class="grid-header grid-header-align-center">
+        <div class="info-content">
+          <p style="text-align: justify; width: 100%;"><font size="+3">Some other key features:</font></p>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-6 col-lg-4 mb-3 mt-0  ">
+        <div class="card card-service card-services">
+          <div class="card-content">
+            <div class="card-title">
+              <h3><font size="+3" style="color: var(--color-primary);"><i class="fa fa-line-chart"></i></font> &nbsp; Easy Scalability</i></h3>
+            </div>
+            <div class="card-description">
+              <p>Our design solves scalability problems from the outset, with our <strong>run-out compensation system</strong>. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+        <div class="col-12 col-sm-6 col-md-6 col-lg-4 mb-3  ">
+          <div class="card card-service card-services">
+            <div class="card-content">
+              <div class="card-title">
+                <h3><font size="+3" style="color: var(--color-primary);"><i class="fa fa-envira"></i></font> &nbsp; Reduced Weight</i></h3>
+              </div>
+              <div class="card-description">
+                <p>We achieve a <strong>~30% weight reduction</strong> in components and structural elements, having a <strong>large positive impact on cost redution</strong>.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-6 col-lg-4 mb-3  ">
+          <div class="card card-service card-services">
+            <div class="card-content">
+              <div class="card-title">
+                <h3><font size="+3" style="color: var(--color-primary);"><i class="fa fa-clock-o"></i></font> &nbsp; Increased Lifetime/¿span?</i></h3>
+              </div>
+              <div class="card-description">
+                <p>Lorem ipsum dolor sit amet.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-6 col-lg-4 mb-3  ">
+          <div class="card card-service card-services">
+            <div class="card-content">
+              <div class="card-title">
+                <h3><font size="+3" style="color: var(--color-primary);"><i class="fa fa-th"></i></font> &nbsp; Modularity</i></h3>
+              </div>
+              <div class="card-description">
+                <p>The modularity of our design proposal allows for easy inspection and replacement, drastically reducing O&M costs, and allowing for local-suppliers.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-12 col-sm-6 col-md-6 col-lg-4 mb-3  ">
+          <div class="card card-service card-services">
+            <div class="card-content">
+              <div class="card-title">
+                <h3><font size="+3" style="color: var(--color-primary);"><i class="fa fa-compress"></i></font> &nbsp; Compact solution</i></h3>
+              </div>
+              <div class="card-description">
+                <p>Lorem ipsum dolor sit amet...</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-12 col-sm-6 col-md-6 col-lg-4 mb-3  mb-0 ">
+          <div class="card card-service card-services">
+            <div class="card-content">
+              <div class="card-title">
+                <h3><font size="+3" style="color: var(--color-primary);"><i class="fa fa-calculator"></i></font> &nbsp; Engineering</i></h3>
+              </div>
+              <div class="card-description">
+                <p>OptiGen is a highly specialised company in bringing the most advanced technical solutions into a reality. More than 35 cumulative years of experience in the sector, as well as more than 10 patents filed endorse us. NO ANIRIA AQUÍ</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    </div>
+  </div>
+</div>
+
+
+<div class="section" id="team">
+  <div class="container">
+    <div class="info">
+      <div class="row">
+        <div class="grid-header grid-header-align-center">
+          <div class="info-content">
+            <h2 style="text-align: center;">Team</h2>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-4 col-lg-4 mt-0 mb-3 mb-md-6">
+          <div class="card card-team card-has-thumbnail ">
+            <div class="card-thumbnail">
+              <!--<a href="https://">-->
+                <img src="foto1.jpg" width="140" height="140">
+              <!--</a>-->
+            </div>
+            <div class="card-content">
+              <div class="card-title">
+                <!--<a href="https://">-->
+                  <h3 style="color: var(--color-primary);">Santiago Canedo</h3>
+                <!--</a>-->
+              </div>
+              <div class="card-jobtitle">Founder & CTO</div>
+                <div class="card-description">
+                  <p>Here a brief description of the profile and track record.</p>
+                </div>
+                <div class="card-links">
+                  <a href="https://www.linkedin.com/in/santiago-canedo-57b83347/">
+                    <i class="fa fa-linkedin-square"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-4 col-lg-4 mt-0 mb-3 mb-md-6">
+          <div class="card card-team card-has-thumbnail ">
+            <div class="card-thumbnail">
+              <!--<a href="https://">-->
+                <img src="foto2.jpg" width="140" height="140">
+              <!--</a>-->
+            </div>
+            <div class="card-content">
+              <div class="card-title">
+                <!--<a href="https://">-->
+                  <h3 style="color: var(--color-primary);">Blai Pié</h3>
+                <!--</a>-->
+              </div>
+              <div class="card-jobtitle">CEO</div>
+                <div class="card-description">
+                  <p>Here a brief description of the profile and track record.</p>
+                </div>
+                <div class="card-links">
+                  <a href="https://www.linkedin.com/in/blai-pi%C3%A9-i-valls-phd-cfa-65bbb7a4/">
+                    <i class="fa fa-linkedin-square"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-4 col-lg-4 mt-0 mb-3 mb-md-6">
+          <div class="card card-team card-has-thumbnail ">
+            <div class="card-thumbnail">
+              <!--<a href="https://">-->
+                <img src="foto3.jpg" width="140" height="140">
+              <!--</a>-->
+            </div>
+            <div class="card-content">
+              <div class="card-title">
+                <!--<a href="https://">-->
+                  <h3 style="color: var(--color-primary);">Stefan Keller</h3>
+                <!--</a>-->
+              </div>
+              <div class="card-jobtitle">Chief engineer & Advisor</div>
+                <div class="card-description">
+                  <p>Here a brief description of the profile and track record.</p>
+                </div>
+                <div class="card-links">
+                  <a href="https://www.linkedin.com/in/stefan-keller-542317a1/">
+                    <i class="fa fa-linkedin-square"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section bg-base-bg-2" id="contacte">
+  <div class="container">
+    <div class="info">
+      <div class="row">
+        <div class="grid-header grid-header-align-center">
+          <div class="info-content">
+            <h2 style="text-align: center;">Contact</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row justify-content-start">
+
+        <div class="col-12 col-lg-12">
+          <div class="grid-header">
+            <div class="info-content">
+              <p>If you want more information, feel free to send us an e-mail on <a href="mailto:caa.pie@gmail.com">caa.pie@gmail.com</a>, or contact us using the following form:</p>
+              <!-- <p style="font-size: 80%; color: #727272;">*Camps obligatoris.</p> -->
+            </div>
+          </div>
+          <div class="contact">
+            <form action="https://formkeep.com/f/2e05517f74f1" accept-charset="UTF-8" enctype="multipart/form-data" method="POST" name="contact"><input type="hidden" name="form-name" value="contact">
+              <div class="form-group">
+                <label for="nom">Name *</label>
+                <input type="text" id="name" required="required" name="name" placeholder="Full name">
+              </div>
+              <div class="form-group">
+                <label title="required" for="email">Email *</label>
+                <input type="text" id="email" required="required" name="email" placeholder="example@example.com">
+              </div>
+              <div class="form-group">
+                <label title="required" for="phone">Phone number</label>
+                <input type="text" id="phone" name="phone">
+              </div>
+              <div class="form-group mb-0">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Your message..." style="height:150px"></textarea>
+              </div>
+                <p style="font-size: 80%; color: #727272;">*Please, fill all mandatory fields.</p>
+              <div class="form-group">
+                <div style="width: 40%; float: right;">
+                  <input style="font-weight: 600;" class="button" type="submit" value="Send">
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 
+<div class="section pt-0" id="contacte">
+  <div class="container">
+    <div class="info">
+      <div class="row">
+        <div class="grid-header grid-header-align-center">
+          <div class="info-content">
+            <h2 style="text-align: center;">Contacte</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row justify-content-start">
+
+        <div class="col-12 col-lg-6">
+          <div class="contact">
+
+            <div class="contact-area pb-0">
+              <div class="contact-icon">
+                <i class="fa fa fa-phone"></i>
+              </div>
+              <div class="media-body">
+                <h5>Telèfon</h5>
+                <h4><a href="tel:938673728">93 867 37 28</a></h4>
+              </div>
+            </div>
+            <div class="contact-area pb-0">
+              <div class="contact-icon">
+                <i class="fa fa fa-whatsapp"></i>
+              </div>
+              <div class="media-body">
+                <h5>Whatsapp</h5>
+                <h4><a href="https://api.whatsapp.com/send?phone=34640287365">640 28 73 65</a></h4>
+              </div>
+            </div>
+            <div class="contact-area pb-0">
+              <div class="contact-icon">
+                <i class="fa fa fa-at"></i>
+              </div>
+              <div class="media-body">
+                <h5>E-mail</h5>
+                <h4><a href="mailto:caa.pie@gmail.com">caa.pie@gmail.com</a></h4>
+              </div>
+            </div>
+            <div class="contact-area pb-0">
+              <div class="contact-icon">
+                <i class="fa fa fa-map-marker"></i>
+              </div>
+              <div class="media-body">
+                <h5>C/ Fogars, 15 (xamfrà amb C/ Campins)</h5>
+                <h5>08470 Sant Celoni</h5>
+              </div>
+            </div>
+            <img alt="mapa" class="img-fluid shadow rounded" src="files/mapa-acadèmia-pié.png" width="100%">
+
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-6">
+          <div class="grid-header grid-header-align-center">
+            <div class="info-content">
+              <p>O escriu-nos directament a través del següent formulari. Et respondrem el més aviat possible. </p>
+            </div>
+          </div>
+          <div class="contact">
+            <form action="https://formkeep.com/f/2e05517f74f1" accept-charset="UTF-8" enctype="multipart/form-data" method="POST" name="contact"><input type="hidden" name="form-name" value="contact">
+              <div class="form-group">
+                <label for="nom">Nom</label>
+                <input type="text" id="nom" name="nom" placeholder="Nom i Cognoms...">
+              </div>
+              <div class="form-group">
+                <label title="required" for="email">Correu electrònic *</label>
+                <input type="text" id="email" required="required" name="email" placeholder="exemple@exemple.com">
+              </div>
+              <div class="form-group">
+                <label title="required" for="phone">Telèfon *</label>
+                <input type="text" id="phone" required="required" name="phone">
+              </div>
+              <div class="form-group">
+                <label for="nom">Assumpte</label>
+                <input type="text" id="nom" name="nom" placeholder="Assumpte">
+              </div>
+              <div class="form-group">
+                <label for="message">Missatge</label>
+                <textarea id="message" name="message" placeholder="El teu missatge..." style="height:200px"></textarea>
+              </div>
+              <input class="button" type="submit" value="Enviar">
+            </form>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>-->
+
+
+<div class="section pt-0"> <!-- class hero-fullscreen? -->
+  <div class="container">
+    <img alt="Aprendre és un procés." class="img-fluid shadow rounded" src="files/foto1-1-1024x600.jpg" width="100%">
+  </div>
+</div>
+
+
+<div class="bottom">
+  <div class="container relative">
+    <div class="row align-items-center justify-content-between">
+      <div class="col-auto">
+        <div class="copyright">© 2023 <strong>Optimized Generators, S.L. &nbsp; &nbsp;</strong></div>
+        <!-- <div class="copyright"><i class="fa fa fa-map-marker"></i> Carrer Fogars, 15. 08470 Sant Celoni &nbsp; &nbsp;</div> -->
+        <div class="copyright"><i class="fa fa fa-envelope-o"></i> <a href="mailto:caa.pie@gmail.com">info@optigen.org</a> &nbsp; &nbsp;</div>
+        <!-- <div class="copyright"><i class="fa fa fa-phone"></i> <a href="tel:938673728">93 867 37 28</a> &nbsp; &nbsp;</div>
+        <div class="copyright"><i class="fa fa fa-whatsapp"></i> <a href="https://api.whatsapp.com/send?phone=34640287365">640 28 73 65</a></div> -->
+      </div>
+      
+        <div class="col-auto">
+          <div class="dark-mode-switcher " id="dark-mode-container">
+            <div class="dark-mode-switch">
+              <svg class="dark-mode-icon-dark" data-name="Layer 1" fill="#000000" height="20px" viewBox="0 0 64 64" width="20px" x="0px" xmlns="http://www.w3.org/2000/svg" y="0px">
+                <title>OptiGen</title>
+                <path d="M33.28,58.24A26.95,26.95,0,0,1,24,6l.39-.13a2,2,0,0,1,2.4,2.87,22.42,22.42,0,0,0-1.51,18.75h0A22.47,22.47,0,0,0,54.09,40.8l.76-.3a2,2,0,0,1,2.24.48,2,2,0,0,1,.35,2.24,27,27,0,0,1-24.16,15ZM21.11,11.85a22.94,22.94,0,1,0,30,33.91A26.46,26.46,0,0,1,21.53,28.87h0A26.4,26.4,0,0,1,21.11,11.85Z"></path>
+              </svg>
+              <svg class="dark-mode-icon-light" fill="#000000" height="20px" style="enable-background: new 0 0 100 100;" version="1.1" viewBox="0 0 100 100" width="20px" x="0px" xml:space="preserve" xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" y="0px">
+                <g>
+                  <path d="M50,75c-13.8,0-25-11.2-25-25s11.2-25,25-25s25,11.2,25,25S63.8,75,50,75z M50,33.3c-9.2,0-16.7,7.5-16.7,16.7   c0,9.2,7.5,16.7,16.7,16.7c9.2,0,16.7-7.5,16.7-16.7C66.7,40.8,59.2,33.3,50,33.3z"></path>
+                </g>
+                <g>
+                  <path d="M50,100c-2.3,0-4.2-1.9-4.2-4.2v-8.3c0-2.3,1.9-4.2,4.2-4.2c2.3,0,4.2,1.9,4.2,4.2v8.3C54.2,98.1,52.3,100,50,100z    M17.5,86.7c-1.1,0-2.1-0.4-2.9-1.2c-1.6-1.6-1.6-4.3,0-5.9l5.8-5.8c1.6-1.6,4.3-1.6,5.9,0c1.6,1.6,1.6,4.3,0,5.9l-5.8,5.8   C19.6,86.3,18.6,86.7,17.5,86.7z M82.5,86.7c-1.1,0-2.1-0.4-2.9-1.2l-5.8-5.8c-1.6-1.6-1.6-4.3,0-5.9s4.3-1.6,5.9,0l5.8,5.8   c1.6,1.6,1.6,4.3,0,5.9C84.6,86.3,83.6,86.7,82.5,86.7z M95.8,54.2h-8.3c-2.3,0-4.2-1.9-4.2-4.2c0-2.3,1.9-4.2,4.2-4.2h8.3   c2.3,0,4.2,1.9,4.2,4.2C100,52.3,98.1,54.2,95.8,54.2z M12.5,54.2H4.2C1.9,54.2,0,52.3,0,50c0-2.3,1.9-4.2,4.2-4.2h8.3   c2.3,0,4.2,1.9,4.2,4.2C16.7,52.3,14.8,54.2,12.5,54.2z M76.7,27.5c-1.1,0-2.1-0.4-2.9-1.2c-1.6-1.6-1.6-4.3,0-5.9l5.8-5.8   c1.6-1.6,4.3-1.6,5.9,0c1.6,1.6,1.6,4.3,0,5.9l-5.8,5.8C78.8,27.1,77.7,27.5,76.7,27.5z M23.3,27.5c-1.1,0-2.1-0.4-2.9-1.2   l-5.8-5.8c-1.6-1.6-1.6-4.3,0-5.9c1.6-1.6,4.3-1.6,5.9,0l5.8,5.8c1.6,1.6,1.6,4.3,0,5.9C25.5,27.1,24.4,27.5,23.3,27.5z M50,16.7   c-2.3,0-4.2-1.9-4.2-4.2V4.2C45.8,1.9,47.7,0,50,0c2.3,0,4.2,1.9,4.2,4.2v8.3C54.2,14.8,52.3,16.7,50,16.7z"></path>
+                </g>
+              </svg>
+              <div class="ball"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script type="text/javascript" src="files/header.js"></script>
+  <script type="text/javascript" src="files/hamburger.js"></script>
+  <script type="text/javascript" src="files/darkModeSwitch.js"></script>
+
+</body>
+</html>
