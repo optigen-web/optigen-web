@@ -7438,7 +7438,7 @@ html[data-mode="dark"] .card.card-service .card-icon img { filter: invert(1); }
 
 .card.card-team .card-thumbnail a { display: block; }
 
-.card.card-team .card-thumbnail img { width: 140px; height: 140px; vertical-align: bottom; border-radius: 50%; margin-bottom: 15px; }
+.card.card-team .card-thumbnail img { width: 200px; height: 200px; vertical-align: bottom; border-radius: 50%; margin-bottom: 15px; } /*Manually changed from 140 to 200px*/
 
 .card.card-team .card-thumbnail img:hover { opacity: 1; }
 
