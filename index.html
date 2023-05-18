@@ -11,6 +11,7 @@
 
   <link rel="icon" type="image/png" href="files/favicon.png"> <!--PENDING-->
   <link href="files/main.css" rel="stylesheet">
+  <link href="files/slider.css" rel="stylesheet">
   <link href="https://fonts.gstatic.com/" rel="preconnect">
   <link href="files/fontlist.css" rel="stylesheet">
   <link rel="stylesheet" id="appointment-font-awesome-min-css" href="files/font-awesome-4.7.0/css/font-awesome.min.css" type="text/css" media="all">
@@ -151,9 +152,13 @@
             </div>
           </div>  
         </div>
-        
+
+        <div class="col-12 pt-2">
+          <img alt="Aprendre és un procés." class="img-fluid shadow rounded" src="files/OG-concept.png" width="100%">
+        </div>
+        <!--
         <div class="col-12 col-md-6 mt-1 order-1">
-            <img alt="Picture 1." class="img-fluid shadow rounded" src="files/OG-3D-general.png" width="100%"><!-- width="640" height="360">-->
+            <img alt="Picture 1." class="img-fluid shadow rounded" src="files/OG-3D-general.png" width="100%"><!-- width="640" height="360">
         </div>
         <div class="col-12 col-md-6 mt-1 order-2">
           <div class="info-content">
@@ -162,7 +167,7 @@
             <p><font style="font-variant: small-caps; font-weight:  bold;">3. Rotor sustained on rails</font> by the stator bogies. A system of circumferential rails roll on the bogies' wheels, allowing for a stable and smooth rotation of the generator.</p>
             <p><font style="font-variant: small-caps; font-weight:  bold;">4. Auxiliary elements for stability</font>: a redundant system of rails, wheels and squids ensure the stability of the drive train under the harshest working conditions.</p>
           </div>
-        </div>
+        </div>-->
 
       </div>
     </div>
@@ -264,7 +269,7 @@
                 <h3><font size="+3" style="color: var(--color-primary);"><i class="fa fa-clock-o"></i></font> &nbsp; Increased service life</i></h3>
               </div>
               <div class="card-description">
-                <p>A combination of all the previous factors, allows OptiGen to have a design service life <strong>beyond the industry standard of 25 years</strong>. Our ambitious goal is to achieve 40 years...</p>
+                <p>A combination of some previous features, allows OptiGen to have a design service life <strong>beyond the industry standard of 25 years</strong>. Our ambitious goal is to achieve 40 years...</p>
               </div>
             </div>
           </div>
@@ -291,14 +296,79 @@
     </div>
 
     <div class="row pt-1">
+    <div class="col-12 col-md-1 col-lg-1"></div>
+    <div class="col-12 col-md-10 col-lg-10">
 
       <!--<div class="grid-header grid-header-align-center">
         <div class="info-content">
           <p style="text-align: justify; width: 100%;"><font size="+3">Key features:</font></p>
         </div>
       </div>-->
+      <div class="theme-slider slider owl-carousel owl-theme owl-loaded owl-drag">
+        <div class="owl-stage-outer">
+          <div class="owl-stage" style="transform: translate3d(-2900px, 0px, 0px); transition: all 0.25s ease 0s; width: 65255px;">
+            <div class="owl-item cloned" style="width: 725px;">
+              <div class="theme-slide">
+                <img class="theme-slider-image" src="files/slider-2.png">
+              </div>
+            </div>
+            <div class="owl-item cloned" style="width: 725px;">
+              <div class="theme-slide">
+                <img class="theme-slider-image" src="files/slider-3.png">
+              </div>
+            </div>
+            <div class="owl-item active" style="width: 725px;">
+              <div class="theme-slide">
+                <img class="theme-slider-image" src="files/slider-0.png">
+              </div>
+            </div>
+            <div class="owl-item" style="width: 725px;">
+              <div class="theme-slide">
+                <img class="theme-slider-image" src="files/slider-1.png">
+              </div>
+            </div>
+            <div class="owl-item" style="width: 725px;">
+              <div class="theme-slide">
+                <img class="theme-slider-image" src="files/slider-2.png">
+              </div>
+            </div>
+            <div class="owl-item" style="width: 725px;">
+              <div class="theme-slide">
+                <img class="theme-slider-image" src="files/slider-3.png">
+              </div>
+            </div>
+            <div class="owl-item active" style="width: 725px;">
+              <div class="theme-slide">
+                <img class="theme-slider-image" src="files/slider-0.png">
+              </div>
+            </div>
+            <div class="owl-item" style="width: 725px;">
+              <div class="theme-slide">
+                <img class="theme-slider-image" src="files/slider-1.png">
+              </div>
+            </div>
+            <div class="owl-item" style="width: 725px;">
+              <div class="theme-slide">
+                <img class="theme-slider-image" src="files/slider-2.png">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="owl-nav">
+          <button type="button" role="presentation" class="owl-prev"><img src="files/chevron-left-regular.svg"></button>
+          <button type="button" role="presentation" class="owl-next"><img src="files/chevron-right-regular.svg"></button>
+        </div>
+        <div class="owl-dots">
+          <button role="button" class="owl-dot active"><span></span></button>
+          <button role="button" class="owl-dot"><span></span></button>
+          <button role="button" class="owl-dot"><span></span></button>
+          <button role="button" class="owl-dot"><span></span></button>
+        </div>
+      </div>
 
 
+    </div>
+    <div class="col-12 col-md-1 col-lg-1"></div>
     </div>
   </div>
 </div>
@@ -591,6 +661,8 @@
   <script type="text/javascript" src="files/header.js"></script>
   <script type="text/javascript" src="files/hamburger.js"></script>
   <script type="text/javascript" src="files/darkModeSwitch.js"></script>
+  <script type="text/javascript" src="files/slider.js"></script>
+
 
 </body>
 </html>
