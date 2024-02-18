@@ -7361,6 +7361,8 @@ body { margin: 0; font-family: Source Sans Pro, -apple-system, "Helvetica Neue",
 
 .card .card-content { padding-top: 20px; display: flex; flex: 1; flex-direction: column; }
 
+.card .card-content a { display: flex; flex: 1; flex-direction: column; }
+
 .card .card-client { font-weight: 700; color: var(--color-base-700); }
 
 .card .card-title { margin-bottom: 10px; }
