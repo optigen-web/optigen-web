@@ -43,24 +43,24 @@
 }
 
 /* Caption text */
-/*.slider .text {
+.slider .text {
   color: black;
-  font-size: 15px;
+  font-size: 1.2rem;
   padding: 8px 12px;
   position: absolute;
-  bottom: -36px;
+  bottom: -2.8rem;
   width: 100%;
   text-align: center;
-}*/
+}
 
 /* Number text (1/3 etc) */
-/*.slider .numbertext {
+.slider .numbertext {
   color: black;
   font-size: 12px;
   padding: 8px 12px;
   position: absolute;
   top: 0;
-}*/
+}
 
 /* The dots/bullets/indicators */
 .dot {

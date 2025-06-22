@@ -2226,6 +2226,12 @@ form input[type="submit"] { -webkit-appearance: none; border: none; cursor: poin
 
 .hero .hero-background-image { width: 100%; height: 100%; position: absolute; top: 0; z-index: 0; background-size: cover; background-repeat: no-repeat; background-position: top center; }
 
+.hero .hero-background-image2 { width: 160vh; height: 100vh; position: absolute; bottom: 0; right: 0; z-index: 0; background-size: cover; background-repeat: no-repeat; background-position: bottom left; }
+
+@media (min-width: 768px) { .hero.hero-background-image2 { width: 58vw; } }
+
+@media (max-width: 767.98px) { .hero.hero-background-image2 { width: 100vh; } }
+
 .hero .container { z-index: 1; }
 
 .hero .hero-text { flex: 0; margin: auto 0; }
