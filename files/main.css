@@ -1865,7 +1865,7 @@ body.has-fixed-header .section:first-of-type { padding-top: 90px; padding-bottom
 
 .header a { color: var(--color-primary); }
 
-.header-transparent { position: absolute; width: 100%; top: 0; z-index: 10; background-color: transparent !important; box-shadow: none !important; color: white; }
+.header-transparent { position: absolute; width: 100%; top: 0; z-index: 10; background-color: transparent !important; box-shadow: none !important; color: white; filter: drop-shadow(2px 2px 2px var( --color-base-text-2)); }
 
 .header-transparent a { color: white; }
 
