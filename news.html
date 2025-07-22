@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta content="ie=edge" http-equiv="x-ua-compatible">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+
+  <title>Optimized Generators</title>
+  <meta name="description" content="Optimized Generators, S.L."> <!--PENDING-->
+
+  <!--<link rel="icon" type="image/png" href="files/favicon.png"> <!--PENDING-->
+  <link href="files/main.css" rel="stylesheet">
+  <link href="files/slider.css" rel="stylesheet">
+  <link href="https://fonts.gstatic.com/" rel="preconnect">
+  <link href="files/fontlist.css" rel="stylesheet">
+  <link rel="stylesheet" id="appointment-font-awesome-min-css" href="files/font-awesome-4.7.0/css/font-awesome.min.css" type="text/css" media="all">
+
+  <script>localStorage.getItem('darkMode') === 'true' && document.documentElement.setAttribute('data-mode', 'dark');</script>
+</head>
+
+<body class="page page-home has-fixed-header">
+
+<div class="menu-main-mobile " id="menu-main-mobile">
+  
+  <div class="menu-main-mobile-top">
+    <div id="close-overlay" class="menu-main-close">
+      <div class="hamburger"></div>
+    </div>
+  </div>
+
+  <div class="menu-main-mobile-center">
+    <ul class="menu">
+      <li class="menu-item menu-item-home active">
+        <a href="./index.html">Home</a>
+      </li>
+      <li class="menu-item menu-item-services active">
+        <a href="./index.html#concept">Concept</a>
+      </li>
+      <li class="menu-item menu-item-blog active">
+        <a href="./index.html#team">Team</a>
+      </li>
+      <li class="menu-item menu-item-blog active">
+        <a href="./news.html">News</a>
+      </li>
+      <li class="menu-item menu-item-about active">
+        <a href="./index.html#contact">Contact</a>
+      </li>
+    </ul>
+  </div>
+
+  <!--<div class="menu-main-mobile-bottom">
+    <div class="dark-mode-switcher " id="dark-mode-container">
+      <div class="dark-mode-switch">
+      <svg class="dark-mode-icon-dark" data-name="Layer 1" fill="#000000" height="20px" viewBox="0 0 64 64" width="20px" x="0px" xmlns="http://www.w3.org/2000/svg" y="0px">
+        <title>OptiGen</title>
+        <path d="M33.28,58.24A26.95,26.95,0,0,1,24,6l.39-.13a2,2,0,0,1,2.4,2.87,22.42,22.42,0,0,0-1.51,18.75h0A22.47,22.47,0,0,0,54.09,40.8l.76-.3a2,2,0,0,1,2.24.48,2,2,0,0,1,.35,2.24,27,27,0,0,1-24.16,15ZM21.11,11.85a22.94,22.94,0,1,0,30,33.91A26.46,26.46,0,0,1,21.53,28.87h0A26.4,26.4,0,0,1,21.11,11.85Z"></path>
+      </svg>
+      <svg class="dark-mode-icon-light" fill="#000000" height="20px" style="enable-background: new 0 0 100 100;" version="1.1" viewBox="0 0 100 100" width="20px" x="0px" xml:space="preserve" xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" y="0px">
+        <g>
+        <path d="M50,75c-13.8,0-25-11.2-25-25s11.2-25,25-25s25,11.2,25,25S63.8,75,50,75z M50,33.3c-9.2,0-16.7,7.5-16.7,16.7   c0,9.2,7.5,16.7,16.7,16.7c9.2,0,16.7-7.5,16.7-16.7C66.7,40.8,59.2,33.3,50,33.3z"></path>
+        </g>
+        <g>
+        <path d="M50,100c-2.3,0-4.2-1.9-4.2-4.2v-8.3c0-2.3,1.9-4.2,4.2-4.2c2.3,0,4.2,1.9,4.2,4.2v8.3C54.2,98.1,52.3,100,50,100z    M17.5,86.7c-1.1,0-2.1-0.4-2.9-1.2c-1.6-1.6-1.6-4.3,0-5.9l5.8-5.8c1.6-1.6,4.3-1.6,5.9,0c1.6,1.6,1.6,4.3,0,5.9l-5.8,5.8   C19.6,86.3,18.6,86.7,17.5,86.7z M82.5,86.7c-1.1,0-2.1-0.4-2.9-1.2l-5.8-5.8c-1.6-1.6-1.6-4.3,0-5.9s4.3-1.6,5.9,0l5.8,5.8   c1.6,1.6,1.6,4.3,0,5.9C84.6,86.3,83.6,86.7,82.5,86.7z M95.8,54.2h-8.3c-2.3,0-4.2-1.9-4.2-4.2c0-2.3,1.9-4.2,4.2-4.2h8.3   c2.3,0,4.2,1.9,4.2,4.2C100,52.3,98.1,54.2,95.8,54.2z M12.5,54.2H4.2C1.9,54.2,0,52.3,0,50c0-2.3,1.9-4.2,4.2-4.2h8.3   c2.3,0,4.2,1.9,4.2,4.2C16.7,52.3,14.8,54.2,12.5,54.2z M76.7,27.5c-1.1,0-2.1-0.4-2.9-1.2c-1.6-1.6-1.6-4.3,0-5.9l5.8-5.8   c1.6-1.6,4.3-1.6,5.9,0c1.6,1.6,1.6,4.3,0,5.9l-5.8,5.8C78.8,27.1,77.7,27.5,76.7,27.5z M23.3,27.5c-1.1,0-2.1-0.4-2.9-1.2   l-5.8-5.8c-1.6-1.6-1.6-4.3,0-5.9c1.6-1.6,4.3-1.6,5.9,0l5.8,5.8c1.6,1.6,1.6,4.3,0,5.9C25.5,27.1,24.4,27.5,23.3,27.5z M50,16.7   c-2.3,0-4.2-1.9-4.2-4.2V4.2C45.8,1.9,47.7,0,50,0c2.3,0,4.2,1.9,4.2,4.2v8.3C54.2,14.8,52.3,16.7,50,16.7z"></path>
+        </g>
+      </svg>
+      <div class="ball"></div>
+      </div>
+    </div>
+  </div>-->
+
+</div>
+
+<div id="header" class="header header-fixed header-transparent">
+  <div class="container">
+    <div class="logos">
+      <div class="logo logo-desktop">
+          <div class="logo-image">
+            <a href="#">
+              <img alt="Logo" src="files/logo.png" width="198px" height="45px">
+            </a>
+          </div>
+      </div>
+      <div class="logo logo-desktop-invert"> 
+          <div class="logo-image">
+            <a href="#">
+              <img alt="Logo" src="files/logo-invert.png" width="198px" height="45px">
+            </a>
+          </div>
+      </div>
+      <div class="logo logo-mobile">
+          <div class="logo-image">
+            <a href="#">
+              <img alt="Logo" src="files/logo.png" width="198px" height="45px"> <!--PENDING abans: w34 h30-->
+            </a>
+          </div>
+      </div>
+      <div class="logo logo-mobile-invert">
+          <div class="logo-image">
+            <a href="#">
+              <img alt="Logo" src="files/logo-invert.png" width="198px" height="45px"> <!--PENDING w34 h30-->
+            </a>
+          </div>
+      </div>
+    </div>
+    <div class="menu-main">
+      <ul>
+        <li class="active"><a href="./index.html">Home</a></li>
+        <li class="active"><a href="./index.html#concept">Concept</a></li>
+        <li class="active"><a href="./index.html#team">Team</a></li>
+        <li class="active"><a href="./news.html">News</a></li>
+        <li class="active"><a href="./index.html#contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="hamburger-trigger" id="toggle-menu-main-mobile">
+      <button class="hamburger">Menu</button>
+    </div>
+  </div>
+</div>
+
+<div id="wrapper" class="wrapper">     
+  <div class="hero hero-fullscreen-mobile hero-gradient" style="background-color: #1d2830; height: 60px; min-height: 60px;">
+
+    <div class="container ">
+      <div class="row align-items-center">
+        <div class="col-xl-10 col-lg-8 col-md-6 col-sm-10">
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<div class="section bg-base-bg-2 pt-5 pb-3">
+  <div class="container">
+    <div class="info">
+      <div class="row">
+          
+        <div class="col-12">
+          <div class="grid-header">
+            <div class="info-content">
+              <h1>OptiGen's disruptive bearingless drive-train design aims at cutting offshore wind costs</h1>
+              <h5 style="color: gray;">Press Release &ndash; 22/07/2025</h5>
+            </div>
+          </div>
+          <hr style="height: 1px; color: gray;"><br>
+        </div>
+        <div class="col-12">
+          <div class="grid-header grid-header-align-center">
+            <div class="info-content" style="width: 80%;">
+
+              <p style="text-align: justify; width: 100%; margin-bottom: 1em;">Optimized Generators (<a href="https://www.optigen.org">OptiGen</a>), a start-up company founded in 2023 in Barcelona, has recently presented its first design of a 15 MW wind turbine generator based on its own patent-pending drive-train technology. The direct-drive turbine promises to significantly improve on currently available designs by reducing weight and cost of the turbine, while also positively impacting operational costs through increased inspectability and repairability of its components.</p>
+
+              <p style="text-align: justify; width: 100%; margin-bottom: 1em;">With the presentation of this turbine design, OptiGen achieves the first milestone of a Horizon Europe project that started in 2024. The “<a href="https://lightwind-project.eu">Lightwind Project</a>” obtained a 3 M€ grant to develop OptiGen’s technology from TRL2 to TRL4, with the aim of demonstrating the feasibility of the technology and quantifying its benefits compared to current state-of-the-art wind turbines. To achieve this, an international consortium has been created with 8 partners from 6 different European countries, each contributing their highly specialized expertise.</p>
+
+              <div class="col-12 col-lg-8 col-md-12 mx-auto pt-2 pb-1" style="text-align: center;">
+                <img alt="OptiGen design." class="img-fluid shadow rounded" src="files/OG-concept-sketch.png" style="width: 100%;">
+                <p style="width: 100%; font-size: 80%; margin-top: 0.5em; margin-bottom: 1em; text-align: center;">The OptiGen design uses a wheel-rail system to support the rotor while ensuring airgap stability.</p>
+              </div>
+
+              <p style="text-align: justify; width: 100%; margin-bottom: 1em;">The 15 MW design is just the first milestone of the project. It will constitute the basis for two laboratory tests which are currently being built: one for rolling contact fatigue validation, and a second one for studying the full mechanical system at a reduced scale. These tests are expected to be commissioned, respectively, by the end of this year and by summer 2026. The results will be key to validating the design methodologies and ensuring the viability of the technology at large scale.</p>
+
+              <p style="text-align: justify; width: 100%; margin-bottom: 1em;">When the project concludes, in 2027, the 15 MW design will be optimized, alongside the presentation of new designs with 22 MW and 30 MW power ratings. The project also includes an environmental impact assessment, as well as LCA and social impact studies.</p>
+
+              <p style="text-align: justify; width: 100%; margin-bottom: 1em;">The initial focus on a 15 MW turbine responds to its status as the industry’s current reference size, supported by extensive operational data and widespread market adoption. Building on this foundation, OptiGen’s technology roadmap includes the progressive scaling of its direct-drive system to the emerging 22 MW class and beyond, with feasibility studies underway for even larger platforms. Subject to successful demonstration and validation, OptiGen aims to deliver a commercial product to the market as early as 2030-2032.</p>
+
+              <p style="text-align: justify; width: 100%; margin-bottom: 1em;">According to co-founder and CTO of the company, Santiago Canedo: “one key aspect of our technology is that it doesn’t use large bearings, which nowadays constitute one of the main challenges of offshore wind power due to their high costs of replacement.” Instead, he says, “OptiGen uses a wheel-rail system placed in close vicinity of the generator airgap, allowing to reduce the stiffness of supporting structures and relax manufacturing tolerances, while guaranteeing the stability of the airgap under any operational conditions.”</p>
+
+              <div class="col-12 col-lg-10 col-md-12 mx-auto pt-2 pb-1" style="text-align: center;">
+                <img alt="OptiGen design." class="img-fluid shadow rounded" src="files/OG-exploded-view.png" style="width: 100%;">
+                <p style="width: 100%; font-size: 80%; margin-top: 0.5em; margin-bottom: 1em; text-align: center;">Exploded view of the main components of OptiGen’s 15 MW design.</p>
+              </div>
+
+              <p style="text-align: justify; width: 100%; margin-bottom: 1em;">Early estimates provided by the company indicate that their technology could reduce the weight of the rotor-nacelle assembly by up to 35%, with a reduction in costs of 25% and similar expected savings in tower, substructure and foundations. But according to Stefan Keller, co-founder and technical advisor, the largest advantage lies in the operation and maintenance: “The system is very easy to inspect due to its open design, whereby all mechanical and electrical components can be replaced or repaired in situ, without the need of large cranes, jack-up vessels or towing to port in the case of floating wind.” Furthermore, according to the company, the easy replaceability of wear and tear parts (wheels and their bearings, elastomers, rail segments) is also paving the way for a simple and cost-effective life extension of the wind turbine.</p>
+
+              <p style="text-align: justify; width: 100%; margin-bottom: 1em;">The lower CAPEX together with the reduced operational costs would result in an overall reduction of 10% in the levelized cost of energy (LCoE). The company has not provided figures for the reduction in LCoE considering also life extension, but it is expected to be substantially larger.</p>
+
+              <p style="text-align: justify; width: 100%; margin-bottom: 1em;">In words of co-founder and CEO, Blai Pié: “Offshore wind is a subsidized source of energy that needs disruptive innovations to be competitive in the electricity market and achieve a large-scale deployment. We hope our technology will be a key step towards achieving this goal before it’s too late for the planet.”</p>
+
+              <p style="text-align: justify; width: 100%; margin-bottom: 1em;">The founding team includes professionals with a combined experience of more than 40 years in the wind power sector including the development of offshore wind turbines ranging from 6 to 15 MW and from feasibility studies to commercial operation. The company hopes to grow fast to be able to tackle an ambitious and challenging development roadmap, which includes a full system validation at 1:2 scale in a laboratory no later than 2027.</p>
+
+              <p style="text-align: justify; width: 100%; margin-bottom: 1em;">“Despite having shown a good track record to obtain public funding, we are expecting to have a solid industrial partner onboard by then”, claims the CEO. In the meantime, the start-up is seeking further funding in the form of a pre-seed investment round, to be announced in the coming weeks.</p>
+
+              <br>
+
+              <p>Resources:</p>
+              <p><a href="./files/ndp/NdP_ENG.pdf">Download press release note (English)</a></p>
+              <p><a href="./files/ndp/NdP_ESP.pdf">Descargar nota de prensa (Español)</a></p>
+              <p><a href="./files/ndp/NdP_CAT.pdf">Descarregar nota de premsa (Català)</a></p>
+              <p><a href="./files/ndp/pictures_ndp.zip">Pictures (zip)</a></p>
+
+            </div>
+          </div>  
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section bg-base-bg-4 pt-2 pb-2" id="support">
+  <div class="container">
+    <div class="info">
+      <div class="row">
+        <div class="info-content">
+          <p style="text-align: left; width: 100%;">Supported by / Thanks to:</p>
+        </div>
+      </div>
+      <div class="row pt-0">
+
+        <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-1 mt-1">
+          <div class="card">
+            <div class="card-content">
+              <a href="https://www.accio.gencat.cat/ca/inici/index.html"><img src="files/accio-logo-h.png"></a> <!--Canviar per "v" si més d'un logo??-->
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4 col-sm-4 col-md-3 col-lg-2 mb-1 mt-1">
+          <div class="card">
+            <div class="card-content">
+              <a href="https://www.ansys.com/startup-program"><img src="files/logoAnsys-v.png"></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4 col-sm-4 col-md-3 col-lg-2 mb-1 mt-1">
+          <div class="card">
+            <div class="card-content">
+              <a href="https://www.solidworks.com/solution/solidworks-for-startups-program"><img src="files/logoSW-v.png"></a>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="bottom">
+  <div class="container relative">
+    <div class="row align-items-center justify-content-between">
+      <div class="col-auto">
+        <div class="copyright">© 2023 <strong>Optimized Generators, S.L.</strong> &nbsp; &nbsp; </div>
+        <!-- <div class="copyright"><i class="fa fa fa-map-marker"></i> Carrer Fogars, 15. 08470 Sant Celoni &nbsp; &nbsp;</div> -->
+        <div class="copyright"><i class="fa fa fa-envelope-o"></i> <a href="mailto:info@optigen.org">info@optigen.org</a> &nbsp; &nbsp;</div>
+        <!-- <div class="copyright"><i class="fa fa fa-phone"></i> <a href="tel:938673728">93 867 37 28</a> &nbsp; &nbsp;</div>
+        <div class="copyright"><i class="fa fa fa-whatsapp"></i> <a href="https://api.whatsapp.com/send?phone=34640287365">640 28 73 65</a></div> -->
+      </div>
+      <div class="col-auto">
+        <div class="copyright"><a href="#">Legal Policy</a></div>
+      </div>
+      
+        <!--<div class="col-auto">
+          <div class="dark-mode-switcher " id="dark-mode-container">
+            <div class="dark-mode-switch">
+              <svg class="dark-mode-icon-dark" data-name="Layer 1" fill="#000000" height="20px" viewBox="0 0 64 64" width="20px" x="0px" xmlns="http://www.w3.org/2000/svg" y="0px">
+                <title>OptiGen</title>
+                <path d="M33.28,58.24A26.95,26.95,0,0,1,24,6l.39-.13a2,2,0,0,1,2.4,2.87,22.42,22.42,0,0,0-1.51,18.75h0A22.47,22.47,0,0,0,54.09,40.8l.76-.3a2,2,0,0,1,2.24.48,2,2,0,0,1,.35,2.24,27,27,0,0,1-24.16,15ZM21.11,11.85a22.94,22.94,0,1,0,30,33.91A26.46,26.46,0,0,1,21.53,28.87h0A26.4,26.4,0,0,1,21.11,11.85Z"></path>
+              </svg>
+              <svg class="dark-mode-icon-light" fill="#000000" height="20px" style="enable-background: new 0 0 100 100;" version="1.1" viewBox="0 0 100 100" width="20px" x="0px" xml:space="preserve" xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" y="0px">
+                <g>
+                  <path d="M50,75c-13.8,0-25-11.2-25-25s11.2-25,25-25s25,11.2,25,25S63.8,75,50,75z M50,33.3c-9.2,0-16.7,7.5-16.7,16.7   c0,9.2,7.5,16.7,16.7,16.7c9.2,0,16.7-7.5,16.7-16.7C66.7,40.8,59.2,33.3,50,33.3z"></path>
+                </g>
+                <g>
+                  <path d="M50,100c-2.3,0-4.2-1.9-4.2-4.2v-8.3c0-2.3,1.9-4.2,4.2-4.2c2.3,0,4.2,1.9,4.2,4.2v8.3C54.2,98.1,52.3,100,50,100z    M17.5,86.7c-1.1,0-2.1-0.4-2.9-1.2c-1.6-1.6-1.6-4.3,0-5.9l5.8-5.8c1.6-1.6,4.3-1.6,5.9,0c1.6,1.6,1.6,4.3,0,5.9l-5.8,5.8   C19.6,86.3,18.6,86.7,17.5,86.7z M82.5,86.7c-1.1,0-2.1-0.4-2.9-1.2l-5.8-5.8c-1.6-1.6-1.6-4.3,0-5.9s4.3-1.6,5.9,0l5.8,5.8   c1.6,1.6,1.6,4.3,0,5.9C84.6,86.3,83.6,86.7,82.5,86.7z M95.8,54.2h-8.3c-2.3,0-4.2-1.9-4.2-4.2c0-2.3,1.9-4.2,4.2-4.2h8.3   c2.3,0,4.2,1.9,4.2,4.2C100,52.3,98.1,54.2,95.8,54.2z M12.5,54.2H4.2C1.9,54.2,0,52.3,0,50c0-2.3,1.9-4.2,4.2-4.2h8.3   c2.3,0,4.2,1.9,4.2,4.2C16.7,52.3,14.8,54.2,12.5,54.2z M76.7,27.5c-1.1,0-2.1-0.4-2.9-1.2c-1.6-1.6-1.6-4.3,0-5.9l5.8-5.8   c1.6-1.6,4.3-1.6,5.9,0c1.6,1.6,1.6,4.3,0,5.9l-5.8,5.8C78.8,27.1,77.7,27.5,76.7,27.5z M23.3,27.5c-1.1,0-2.1-0.4-2.9-1.2   l-5.8-5.8c-1.6-1.6-1.6-4.3,0-5.9c1.6-1.6,4.3-1.6,5.9,0l5.8,5.8c1.6,1.6,1.6,4.3,0,5.9C25.5,27.1,24.4,27.5,23.3,27.5z M50,16.7   c-2.3,0-4.2-1.9-4.2-4.2V4.2C45.8,1.9,47.7,0,50,0c2.3,0,4.2,1.9,4.2,4.2v8.3C54.2,14.8,52.3,16.7,50,16.7z"></path>
+                </g>
+              </svg>
+              <div class="ball"></div>
+            </div>
+          </div>
+        </div>-->
+      </div>
+    </div>
+  </div>
+  
+  <script type="text/javascript" src="files/header.js"></script>
+  <script type="text/javascript" src="files/hamburger.js"></script>
+  <!--<script type="text/javascript" src="files/darkModeSwitch.js"></script>-->
+  <script type="text/javascript" src="files/slider.js"></script>
+
+
+</body>
+</html>
