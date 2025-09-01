@@ -9,7 +9,7 @@
   <title>Optimized Generators</title>
   <meta name="description" content="Optimized Generators, S.L."> <!--PENDING-->
 
-  <!--<link rel="icon" type="image/png" href="files/favicon.png"> <!--PENDING-->
+  <!--<link rel="icon" type="image/png" href="files/favicon.png"> --><!--PENDING-->
   <link href="files/main.css" rel="stylesheet">
   <link href="files/slider.css" rel="stylesheet">
   <link href="https://fonts.gstatic.com/" rel="preconnect">
@@ -561,13 +561,19 @@
                 <label title="required" for="phone">Phone number</label>
                 <input type="text" id="phone" name="phone">
               </div>
-              <div class="form-group mb-0">
+              <div class="form-group">
                 <label for="message">Message</label>
                 <textarea id="message" name="message" placeholder="Your message..." style="height:150px"></textarea>
               </div>
-                <p style="font-size: 80%; color: #727272;">* Please, fill all mandatory fields.</p>
+              <div class="mb-1" style="float: left; text-align: right;"> 
+                <label class="form-check-label" for="Privacy_Policy_I_have_read_and_accept_the_Privacy_Policy.">
+                    <input type="checkbox" name="Privacy Policy[]" id="Privacy_Policy_I_have_read_and_accept_the_Privacy_Policy." value="I have read and accept the Privacy Policy." required="required" class="form-check-input" /> I have read and accept the <a href="./privacy.html" target="_blank">Privacy Policy</a>. *
+                </label>
+              </div>
+              <br>&nbsp;<br>
+              <p style="width: 60%; float: left; font-size: 85%; color: #606060;">* Please, fill all mandatory fields.</p>
               <div class="form-group">
-                <div style="width: 40%; float: right;">
+                <div style="width: 35%; float: right;">
                   <input style="font-weight: 600;" class="button" type="submit" value="Send">
                 </div>
               </div>
